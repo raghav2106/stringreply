@@ -107,6 +107,7 @@ GET localhost:8080/reply/helloworld
 
 I have implemented an new api "v2/reply/{message}" where it takes two inputs 1: rule and 2 : actualMessage 
 
+ - Sample api : "http://localhost:8080/v2/reply/12-kbzw9ru"
 
 Test cases are implemented as follows
 - `1`: Same rule repeating reverse 
