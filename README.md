@@ -109,20 +109,20 @@ I have implemented an new api "v2/reply/{message}" where it takes two inputs 1: 
 
 
 Test cases are implemented as follows
-1: Same rule repeating reverse 
+- `1`: Same rule repeating reverse 
     eg : 11-kbzw9ru
-2 : Different rules 
+- `2`: Different rules 
     eg : 12-kbzw9ru
-3 : Same rule repeating encoding
+- `3`: Same rule repeating encoding
     eg : 22-kbzw9ru
 
 Invalid message as follows :
 
-1 : Rule with invalid lenght 
+- `1`: Rule with invalid lenght 
     eg : 111-test
-2 : Rule with invalid character
+- `2`: Rule with invalid character
     eg : 1av-test
-3 : Rule with empty spaces
+- `3`: Rule with empty spaces
     eg :    -test
 
 ## Alternate suggesion
