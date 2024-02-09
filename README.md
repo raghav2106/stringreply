@@ -102,3 +102,31 @@ GET localhost:8080/reply/helloworld
     message: "helloword"
 }
 ```
+
+## Solution
+
+I have implemented an new api "v2/reply/{message}" where it takes two inputs 1: rule and 2 : actualMessage 
+
+
+Test cases are implemented as follows
+1: Same rule repeating reverse 
+    eg : 11-kbzw9ru
+2 : Different rules 
+    eg : 12-kbzw9ru
+3 : Same rule repeating encoding
+    eg : 22-kbzw9ru
+
+Invalid message as follows :
+
+1 : Rule with invalid lenght 
+    eg : 111-test
+2 : Rule with invalid character
+    eg : 1av-test
+3 : Rule with empty spaces
+    eg :    -test
+
+## Alternate suggesion
+
+- If we have huge rules coming in future then we can proceed with Factory design pattern when each rule will be defined in seperate class and implemet the rule whithout touching the other existing rules. 
+- This is recommand way to implement the design when the new rules are coming in our requirment. 
+
